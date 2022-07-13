@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.7 on win32)" generated="20220713 14:47:23.423" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.8.7 on win32)" generated="20220713 18:48:59.613" rpa="false" schemaversion="3">
 <suite id="s1" name="Episode 1" source="D:\RobotFramework\poolsawat.com\testcases\episode_1.robot">
 <test id="s1-t1" name="CASE_00001 lesson 1 Log to console" line="10">
 <kw name="Log To Console" library="BuiltIn">
 <arg>'Hello World 1'</arg>
 <doc>Logs the given message to the console.</doc>
-<msg timestamp="20220713 14:47:23.464" level="TRACE">Arguments: [ "'Hello World 1'" ]</msg>
-<msg timestamp="20220713 14:47:23.465" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220713 14:47:23.464" endtime="20220713 14:47:23.465"/>
+<msg timestamp="20220713 18:48:59.658" level="TRACE">Arguments: [ "'Hello World 1'" ]</msg>
+<msg timestamp="20220713 18:48:59.659" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220713 18:48:59.658" endtime="20220713 18:48:59.659"/>
 </kw>
-<status status="PASS" starttime="20220713 14:47:23.463" endtime="20220713 14:47:23.465"/>
+<status status="PASS" starttime="20220713 18:48:59.658" endtime="20220713 18:48:59.659"/>
 </test>
 <test id="s1-t2" name="CASE_00002 lesson 2 use external keywords with void" line="13">
 <kw name="Print Message from agruments" library="api_keywords">
 <arg>'Hello world 2'</arg>
 <doc>Print Message from agruments</doc>
-<msg timestamp="20220713 14:47:23.467" level="TRACE">Arguments: [ ${arg0}="'Hello world 2'" ]</msg>
+<msg timestamp="20220713 18:48:59.661" level="TRACE">Arguments: [ ${arg0}="'Hello world 2'" ]</msg>
 <kw name="Log To Console" library="BuiltIn">
 <arg>'Result from Print Message from agruments keywords ::=='${arg0}</arg>
 <doc>Logs the given message to the console.</doc>
-<msg timestamp="20220713 14:47:23.468" level="TRACE">Arguments: [ "'Result from Print Message from agruments keywords ::==''Hello world 2'" ]</msg>
-<msg timestamp="20220713 14:47:23.468" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220713 14:47:23.467" endtime="20220713 14:47:23.468"/>
+<msg timestamp="20220713 18:48:59.662" level="TRACE">Arguments: [ "'Result from Print Message from agruments keywords ::==''Hello world 2'" ]</msg>
+<msg timestamp="20220713 18:48:59.662" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220713 18:48:59.661" endtime="20220713 18:48:59.662"/>
 </kw>
-<msg timestamp="20220713 14:47:23.468" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220713 14:47:23.467" endtime="20220713 14:47:23.468"/>
+<msg timestamp="20220713 18:48:59.662" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220713 18:48:59.661" endtime="20220713 18:48:59.662"/>
 </kw>
-<status status="PASS" starttime="20220713 14:47:23.467" endtime="20220713 14:47:23.469"/>
+<status status="PASS" starttime="20220713 18:48:59.660" endtime="20220713 18:48:59.662"/>
 </test>
 <test id="s1-t3" name="CASE_00003 lesson 3 use external keywords with return" line="16">
 <kw name="Calculate value" library="api_keywords">
@@ -34,84 +34,84 @@
 <arg>5</arg>
 <arg>10</arg>
 <doc>Calculate value</doc>
-<msg timestamp="20220713 14:47:23.471" level="TRACE">Arguments: [ ${a}='5' | ${b}='10' ]</msg>
+<msg timestamp="20220713 18:48:59.664" level="TRACE">Arguments: [ ${a}='5' | ${b}='10' ]</msg>
 <kw name="Evaluate" library="BuiltIn">
 <var>${result}</var>
 <arg>${a}+${b}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220713 14:47:23.471" level="TRACE">Arguments: [ '5+10' ]</msg>
-<msg timestamp="20220713 14:47:23.471" level="TRACE">Return: 15</msg>
-<msg timestamp="20220713 14:47:23.471" level="INFO">${result} = 15</msg>
-<status status="PASS" starttime="20220713 14:47:23.471" endtime="20220713 14:47:23.471"/>
+<msg timestamp="20220713 18:48:59.665" level="TRACE">Arguments: [ '5+10' ]</msg>
+<msg timestamp="20220713 18:48:59.665" level="TRACE">Return: 15</msg>
+<msg timestamp="20220713 18:48:59.665" level="INFO">${result} = 15</msg>
+<status status="PASS" starttime="20220713 18:48:59.664" endtime="20220713 18:48:59.665"/>
 </kw>
-<msg timestamp="20220713 14:47:23.471" level="TRACE">Return: 15</msg>
-<msg timestamp="20220713 14:47:23.471" level="INFO">${result} = 15</msg>
-<status status="PASS" starttime="20220713 14:47:23.470" endtime="20220713 14:47:23.471"/>
+<msg timestamp="20220713 18:48:59.665" level="TRACE">Return: 15</msg>
+<msg timestamp="20220713 18:48:59.665" level="INFO">${result} = 15</msg>
+<status status="PASS" starttime="20220713 18:48:59.664" endtime="20220713 18:48:59.665"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>'Result from Calculate value keywords::=='${result}</arg>
 <doc>Logs the given message to the console.</doc>
-<msg timestamp="20220713 14:47:23.472" level="TRACE">Arguments: [ "'Result from Calculate value keywords::=='15" ]</msg>
-<msg timestamp="20220713 14:47:23.472" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220713 14:47:23.472" endtime="20220713 14:47:23.472"/>
+<msg timestamp="20220713 18:48:59.666" level="TRACE">Arguments: [ "'Result from Calculate value keywords::=='15" ]</msg>
+<msg timestamp="20220713 18:48:59.666" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220713 18:48:59.665" endtime="20220713 18:48:59.666"/>
 </kw>
-<status status="PASS" starttime="20220713 14:47:23.470" endtime="20220713 14:47:23.472"/>
+<status status="PASS" starttime="20220713 18:48:59.663" endtime="20220713 18:48:59.666"/>
 </test>
 <test id="s1-t4" name="CASE_00004 lesson 4 get data from yaml file" line="20">
 <kw name="Log To Console" library="BuiltIn">
 <arg>'request ::='${test_data.CASE_00004.request}</arg>
 <doc>Logs the given message to the console.</doc>
-<msg timestamp="20220713 14:47:23.475" level="TRACE">Arguments: [ "'request ::='{'name': 'poolsawat Dev Env', 'age': 30, 'nation': 'Thai'}" ]</msg>
-<msg timestamp="20220713 14:47:23.475" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220713 14:47:23.474" endtime="20220713 14:47:23.475"/>
+<msg timestamp="20220713 18:48:59.669" level="TRACE">Arguments: [ "'request ::='{'name': 'poolsawat Dev Env', 'age': 30, 'nation': 'Thai'}" ]</msg>
+<msg timestamp="20220713 18:48:59.669" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220713 18:48:59.668" endtime="20220713 18:48:59.669"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>'expect_data ::=='${test_data.CASE_00004.expect_data}</arg>
 <doc>Logs the given message to the console.</doc>
-<msg timestamp="20220713 14:47:23.476" level="TRACE">Arguments: [ "'expect_data ::=='{'status': {'code': 'API200', 'message': 'Success'}}" ]</msg>
-<msg timestamp="20220713 14:47:23.476" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220713 14:47:23.475" endtime="20220713 14:47:23.476"/>
+<msg timestamp="20220713 18:48:59.670" level="TRACE">Arguments: [ "'expect_data ::=='{'status': {'code': 'API200', 'message': 'Success'}}" ]</msg>
+<msg timestamp="20220713 18:48:59.670" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220713 18:48:59.669" endtime="20220713 18:48:59.670"/>
 </kw>
-<status status="PASS" starttime="20220713 14:47:23.474" endtime="20220713 14:47:23.477"/>
+<status status="PASS" starttime="20220713 18:48:59.668" endtime="20220713 18:48:59.671"/>
 </test>
 <test id="s1-t5" name="CASE_00005 lesson 5 get env global file" line="24">
 <kw name="Log To Console" library="BuiltIn">
 <arg>'app_name ::=='${app_name}</arg>
 <doc>Logs the given message to the console.</doc>
-<msg timestamp="20220713 14:47:23.478" level="TRACE">Arguments: [ "'app_name ::=='poolsawat.com" ]</msg>
-<msg timestamp="20220713 14:47:23.479" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220713 14:47:23.478" endtime="20220713 14:47:23.479"/>
+<msg timestamp="20220713 18:48:59.673" level="TRACE">Arguments: [ "'app_name ::=='poolsawat.com" ]</msg>
+<msg timestamp="20220713 18:48:59.673" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220713 18:48:59.673" endtime="20220713 18:48:59.673"/>
 </kw>
-<status status="PASS" starttime="20220713 14:47:23.478" endtime="20220713 14:47:23.479"/>
+<status status="PASS" starttime="20220713 18:48:59.672" endtime="20220713 18:48:59.673"/>
 </test>
 <test id="s1-t6" name="CASE_00006 lesson 6 use custom lib keywords" line="27">
 <kw name="Get Nowdate" library="date_util">
 <var>${now}</var>
-<msg timestamp="20220713 14:47:23.480" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20220713 14:47:23.481" level="TRACE">Return: datetime.datetime(2022, 7, 13, 14, 47, 23, 480131)</msg>
-<msg timestamp="20220713 14:47:23.481" level="INFO">${now} = 2022-07-13 14:47:23.480131</msg>
-<status status="PASS" starttime="20220713 14:47:23.480" endtime="20220713 14:47:23.481"/>
+<msg timestamp="20220713 18:48:59.675" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220713 18:48:59.677" level="TRACE">Return: datetime.datetime(2022, 7, 13, 18, 48, 59, 676923)</msg>
+<msg timestamp="20220713 18:48:59.677" level="INFO">${now} = 2022-07-13 18:48:59.676923</msg>
+<status status="PASS" starttime="20220713 18:48:59.675" endtime="20220713 18:48:59.677"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>'now ::=='${now}</arg>
 <doc>Logs the given message to the console.</doc>
-<msg timestamp="20220713 14:47:23.481" level="TRACE">Arguments: [ "'now ::=='2022-07-13 14:47:23.480131" ]</msg>
-<msg timestamp="20220713 14:47:23.481" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220713 14:47:23.481" endtime="20220713 14:47:23.481"/>
+<msg timestamp="20220713 18:48:59.678" level="TRACE">Arguments: [ "'now ::=='2022-07-13 18:48:59.676923" ]</msg>
+<msg timestamp="20220713 18:48:59.678" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220713 18:48:59.677" endtime="20220713 18:48:59.678"/>
 </kw>
-<status status="PASS" starttime="20220713 14:47:23.480" endtime="20220713 14:47:23.482"/>
+<status status="PASS" starttime="20220713 18:48:59.674" endtime="20220713 18:48:59.678"/>
 </test>
 <test id="s1-t7" name="CASE_00007 lesson 7 use variable with resource environnment" line="31">
 <kw name="Log To Console" library="BuiltIn">
 <arg>'welcome_message from ${ENV}::=='${welcome_message}</arg>
 <doc>Logs the given message to the console.</doc>
-<msg timestamp="20220713 14:47:23.484" level="TRACE">Arguments: [ "'welcome_message from dev::=='welcome from Dev environment" ]</msg>
-<msg timestamp="20220713 14:47:23.484" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220713 14:47:23.483" endtime="20220713 14:47:23.484"/>
+<msg timestamp="20220713 18:48:59.680" level="TRACE">Arguments: [ "'welcome_message from dev::=='welcome from Dev environment" ]</msg>
+<msg timestamp="20220713 18:48:59.680" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220713 18:48:59.680" endtime="20220713 18:48:59.680"/>
 </kw>
-<status status="PASS" starttime="20220713 14:47:23.483" endtime="20220713 14:47:23.485"/>
+<status status="PASS" starttime="20220713 18:48:59.679" endtime="20220713 18:48:59.680"/>
 </test>
-<status status="PASS" starttime="20220713 14:47:23.425" endtime="20220713 14:47:23.486"/>
+<status status="PASS" starttime="20220713 18:48:59.615" endtime="20220713 18:48:59.681"/>
 </suite>
 <statistics>
 <total>
